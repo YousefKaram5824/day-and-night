@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap');
+        </style>
+</head>
+<body>
+    <div class="scene">
+    <span class="day">Day</span>
+    <span class="night">Night</span>
+        <div class="sun"></div>
+        <div class="bg"></div>
+    </div>
+    <script>
+        let sun = document.querySelector('.sun');
+        let body = document.querySelector('body');
+        let day = document.querySelector('.day');
+        let night = document.querySelector('.night');
+        sun.onclick = function (){
+            body.classList.toggle('dark');
+        }
+    </script>
+</body>
+</html>
